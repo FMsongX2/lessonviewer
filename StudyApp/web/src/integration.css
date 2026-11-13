@@ -1,0 +1,21 @@
+.agent-toggle { flex: none; min-height: 44px; padding: 8px 14px; border: 1px solid var(--rule); border-radius: 8px; background: var(--sheet); color: var(--ink); cursor: pointer; font-size: 13px; font-weight: 600; white-space: nowrap; }
+.agent-toggle[aria-expanded="true"] { background: var(--red-wash); border-color: var(--red); color: var(--red); }
+.lecture-agent-dock { position: fixed; z-index: 30; top: var(--toolbar-h); bottom: 0; right: 0; width: 360px; background: var(--sheet); border-left: 1px solid var(--rule); overflow-y: auto; overscroll-behavior: contain; }
+.lecture-agent-dock[hidden] { display: none; }
+.agent-backdrop { position: fixed; z-index: 49; inset: 0; background: var(--scrim); }
+.save-warning { position: sticky; top: var(--toolbar-h); z-index: 20; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; background: var(--sheet); border: 1px solid var(--red); padding: 12px 18px; border-radius: 8px; font-size: 14px; }
+.save-warning button { min-height: 44px; padding: 8px 16px; cursor: pointer; background: var(--red-wash); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; }
+.global-save-warning { position: fixed; top: auto; bottom: 20px; left: 20px; right: 20px; z-index: 100; box-shadow: var(--float); }
+@media (min-width: 1320px) {
+  .lecture.with-agent .slide { grid-template-columns: minmax(0, 1fr); row-gap: 24px; }
+  .lecture.with-agent .shot { position: relative; top: auto; }
+  .lecture.with-agent .splitter { display: none; }
+  .lecture.with-agent { margin-right: 360px; }
+}
+@media (max-width: 1319px) {
+  .lecture-agent-dock { z-index: 50; top: 0; width: min(440px, 100vw); border: none; box-shadow: var(--float); height: 100dvh; }
+}
+@media (max-width: 600px) {
+  .agent-toggle { font-size: 12px; padding: 8px 10px; }
+  .lecture-agent-dock { width: 100vw; }
+}

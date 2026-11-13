@@ -1,0 +1,12 @@
+.venv/
+node_modules/
+__pycache__/
+.DS_Store
+*.tsbuildinfo
+# StudyApp: 원본 PDF에서 extract.py로 다시 만드는 렌더 결과와 개인 진도 DB, 빌드 결과
+StudyApp/data/
+StudyApp/dist/
+# pdfnote가 마지막으로 연 파일·위치
+.pdfnote.json
+# 로컬 설정
+.claude/settings.local.json

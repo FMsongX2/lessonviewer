@@ -1,0 +1,9 @@
+node_modules
+dist
+# 원본 PDF에서 다시 만들 수 있는 렌더 결과와 개인 진도 DB
+data/
+.DS_Store
+*.tsbuildinfo
+.env
+.env.*
+!.env.example

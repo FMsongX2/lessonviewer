@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleName</key><string>LessonViewer</string>
+  <key>CFBundleDisplayName</key><string>LessonViewer</string>
+  <key>CFBundleIdentifier</key><string>kr.hajung.lessonviewer</string>
+  <key>CFBundleExecutable</key><string>LessonViewer</string>
+  <key>CFBundleIconFile</key><string>AppIcon</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>2.0</string>
+  <key>CFBundleVersion</key><string>2</string>
+  <key>CFBundleDevelopmentRegion</key><string>ko</string>
+  <key>LSMinimumSystemVersion</key><string>13.3</string>
+  <key>LSApplicationCategoryType</key><string>public.app-category.education</string>
+  <key>NSHighResolutionCapable</key><true/>
+  <key>NSHumanReadableCopyright</key><string>강의 슬라이드를 한국어 해설과 이야기로 묶어 보는 시험공부 앱</string>
+  <key>NSAppTransportSecurity</key>
+  <dict><key>NSAllowsLocalNetworking</key><true/></dict>
+  <key>StudyAppPath</key><string>__STUDYAPP__</string>
+</dict>
+</plist>

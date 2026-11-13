@@ -1,0 +1,39 @@
+{
+  "name": "studyapp",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun scripts/dev.ts",
+    "build": "vite build",
+    "start": "vite build && bun server/index.ts",
+    "serve": "bun server/index.ts",
+    "extract": "../.venv/bin/python scripts/extract.py",
+    "validate": "bun scripts/validate.ts",
+    "typecheck": "tsc --noEmit -p .",
+    "test": "bun test server"
+  },
+  "dependencies": {
+    "hono": "^4.13.13",
+    "katex": "^0.19.0",
+    "motion": "^14.0.0",
+    "perfect-freehand": "^1.2.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-cjk-friendly": "^2.3.2",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "@types/katex": "^0.16.8",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
